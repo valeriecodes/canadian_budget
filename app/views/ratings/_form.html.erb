@@ -1,0 +1,32 @@
+<%= form_with(model: rating) do |form| %>
+  <% if rating.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
+
+      <ul>
+        <% rating.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fun_type %>
+    <%= form.number_field :fun_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suggested_direction %>
+    <%= form.text_field :suggested_direction %>
+  </div>
+
+  <div class="field">
+    <%= form.label :water_requirement %>
+    <%= form.number_field :water_requirement %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

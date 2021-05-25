@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fun type:</strong>
+  <%= @rating.fun_type %>
+</p>
+
+<p>
+  <strong>Suggested direction:</strong>
+  <%= @rating.suggested_direction %>
+</p>
+
+<p>
+  <strong>Water requirement:</strong>
+  <%= @rating.water_requirement %>
+</p>
+
+<%= link_to 'Edit', edit_rating_path(@rating) %> |
+<%= link_to 'Back', ratings_path %>
