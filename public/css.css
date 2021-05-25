@@ -6,6 +6,16 @@ background-repeat: no-repeat;
 background-size: auto;
 background-position: center center;
 background-image: none;
+color: #fff;
+}
+
+.rotated {
+  margin-top: 300px;
+  transform: rotate(-30deg); /* Equal to rotateZ(45deg) */
+  background-color: pink;
+  font-size: 20px;
+  color: black;
+  width: 50%;
 }
 
 #starshine {
@@ -16,8 +26,8 @@ background-image: none;
   height: 100%;
   z-index: 1;
   overflow: hidden;
-}    
-    
+}
+
 .shine {
   display: block;
   position: absolute;
